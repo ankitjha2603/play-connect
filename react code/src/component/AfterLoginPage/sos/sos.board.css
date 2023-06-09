@@ -1,0 +1,196 @@
+.SOS-BLOCK-LAYER {
+    display: flex;
+    justify-content: space-around;
+}
+
+.SOS-BOARD {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 85vmin;
+    height: 85vmin;
+    margin-left: 20px;
+}
+
+.SOS-BLOCK {
+    width: 7vmin;
+    height: 7vmin;
+    background-color: lightblue;
+}
+
+.SOS-WRITEN {
+    color: black;
+    font-size: 4.5vmin;
+    padding: 0px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    background-color: white;
+}
+
+.SOS-HIDDEN {
+    background-color: #888888b0;
+    margin-top: 0.5vmin;
+    margin-left: 1vmin;
+    height: 84vmin;
+    width: 84vmin;
+    position: fixed;
+    cursor: no-drop;
+    z-index: 1000;
+    margin-left: 24px;
+}
+
+.SOS-ScoreBoard {
+    display: flex;
+    width: 86vmin;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+h3.game-code {
+    color: white;
+}
+
+.sos-score.positive {
+    color: green;
+}
+
+.sos-score.negative {
+    color: red;
+}
+
+.SOS-BLOCK::after {
+    content: attr(text);
+    color: red;
+    font-size: 1.5em;
+    z-index: 2;
+    position: relative;
+    top: -417%;
+    left: 0%;
+    font-weight: 600;
+}
+
+input.game-code {
+    font-size: 1.5em;
+    width: 65px;
+    background-color: transparent;
+    color: white;
+    padding: 0px;
+    border: 0px;
+    font-weight: 600;
+    height: 30px;
+    position: relative;
+    z-index: 10000000;
+}
+
+
+.sos-block-innerline:not(.show) {
+    opacity: 0;
+}
+
+
+.sos-block-innerline {
+    background-color: black;
+    position: relative;
+    z-index: 3;
+}
+
+.sos-block-innerline.verticle {
+    width: 2px;
+    height: 100%;
+    left: 50%;
+}
+
+.sos-block-innerline.horizontal {
+    height: 2px;
+    width: 100%;
+    top: -50%;
+}
+
+.sos-block-innerline.diagonal-1 {
+    width: 2px;
+    left: 50%;
+    top: -124.5%;
+    transform: rotate(45deg);
+    height: 142%;
+}
+
+.sos-block-innerline.diagonal-2 {
+    width: 2px;
+    left: 50%;
+    top: -266.5%;
+    transform: rotate(-45deg);
+    height: 141%;
+}
+
+/******************************************/
+/*           end game screen              */
+/******************************************/
+.sos-game-end-screen {
+    background-color: #292828e8;
+    margin-top: 0.5vmin;
+    margin-left: 24px;
+    height: 84vmin;
+    width: 84vmin;
+    position: fixed;
+    cursor: no-drop;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+}
+
+.sos-game-end-screen>span {
+    font-size: 2em;
+    font-weight: 500;
+    color: var(--end-screen-text-color);
+    border-top: 8px solid var(--end-screen-text-color);
+    border-bottom: 8px solid var(--end-screen-text-color);
+    padding: 0px 30px;
+}
+
+.sos-game-end-screen.draw>span {
+    --end-screen-text-color: white;
+}
+
+.sos-game-end-screen.winned>span {
+    --end-screen-text-color: green;
+}
+
+.sos-game-end-screen.loosed>span {
+    --end-screen-text-color: red;
+}
+
+/******************************************/
+
+
+
+
+@media only screen and (max-width: 700px) {
+    .SOS-BOARD {
+        width: 90vmin;
+        height: 90vmin;
+        margin-left: 5vmin;
+    }
+
+    .SOS-HIDDEN {
+        height: 89vmin;
+        width: 92vmin;
+        left: 4vmin;
+        margin-left: 0px;
+    }
+
+    .sos-game-end-screen {
+        margin-left: 5vmin;
+        width: 90vmin;
+        height: 90vmin;
+    }
+
+    .SOS-ScoreBoard {
+        width: 90vmin;
+        margin-left: 5vmin;
+        padding: 0px;
+    }
+}

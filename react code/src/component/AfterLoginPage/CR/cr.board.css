@@ -1,0 +1,155 @@
+.CR-BLOCK-LAYER {
+    display: flex;
+    justify-content: space-around;
+}
+
+.CR-BOARD {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+.CR-BLOCK {
+    width: 8.75vmin;
+    height: 8.75vmin;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CR-BOARD.red>.CR-BLOCK-LAYER>.CR-BLOCK {
+    box-shadow: 1px 3px 6px 0px red;
+}
+
+.CR-BOARD.green>.CR-BLOCK-LAYER>div.CR-BLOCK {
+    box-shadow: 1px 3px 6px 0px green;
+}
+
+/*icon*/
+@keyframes infinite-rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+.CR-BLOCK>div {
+    height: 80%;
+    width: 80%;
+    background-size: contain !important;
+    animation: infinite-rotation 5s linear infinite;
+}
+
+
+
+.CR-BLOCK.r-1>div {
+    background: url(/public/image/CR-image/r-1.png);
+}
+
+.CR-BLOCK.r-2>div {
+    background: url(/public/image/CR-image/r-2.png);
+}
+
+.CR-BLOCK.r-3>div {
+    background: url(/public/image/CR-image/r-3.png);
+}
+
+.CR-BLOCK.r-4>div {
+    background: url(/public/image/CR-image/r-4.png);
+}
+
+.CR-BLOCK.r-5>div {
+    background: url(/public/image/CR-image/r-5.png);
+}
+
+.CR-BLOCK.g-1>div {
+    background: url(/public/image/CR-image/g-1.png);
+}
+
+.CR-BLOCK.g-2>div {
+    background: url(/public/image/CR-image/g-2.png);
+}
+
+.CR-BLOCK.g-3>div {
+    background: url(/public/image/CR-image/g-3.png);
+}
+
+.CR-BLOCK.g-4>div {
+    background: url(/public/image/CR-image/g-4.png);
+}
+
+.CR-BLOCK.g-5>div {
+    background: url(/public/image/CR-image/g-5.png);
+}
+
+.CR-HIDDEN {
+    background-color: transparent;
+    margin-top: 0.5vmin;
+    margin-left: 5px;
+    height: 83vmin;
+    width: 56vmin;
+    position: fixed;
+    cursor: no-drop;
+    z-index: 1000;
+}
+
+.CR-ScoreBoard {
+    display: flex;
+    width: 55vmin;
+    justify-content: flex-end;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+/******************************************/
+/*           end game screen              */
+/******************************************/
+.cr-game-end-screen {
+    background-color: #292828e8;
+    margin-top: 0.5vmin;
+    margin-left: 2px;
+    height: 84vmin;
+    width: 84vmin;
+    position: fixed;
+    cursor: no-drop;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+}
+
+.cr-game-end-screen>span {
+    font-size: 2em;
+    font-weight: 500;
+    color: var(--end-screen-text-color);
+    border-top: 8px solid var(--end-screen-text-color);
+    border-bottom: 8px solid var(--end-screen-text-color);
+    padding: 0px 30px;
+}
+
+.cr-game-end-screen.draw>span {
+    --end-screen-text-color: white;
+}
+
+.cr-game-end-screen.winned>span {
+    --end-screen-text-color: green;
+}
+
+.cr-game-end-screen.loosed>span {
+    --end-screen-text-color: red;
+}
+
+/******************************************/

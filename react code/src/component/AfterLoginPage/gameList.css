@@ -1,0 +1,21 @@
+.card {
+    padding: 5px;
+    width: 15rem;
+    height: fit-content;
+    margin-right: 15px;
+    margin-top: 10px;
+    display: flex;
+    transition: transform 0.5s, border-color 0.25s;
+    cursor: pointer;
+    border: 4px double transparent;
+}
+
+.card-img-top {
+    width: 100%;
+    align-self: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    border-color: green;
+}
