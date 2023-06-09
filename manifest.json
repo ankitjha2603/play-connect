@@ -1,0 +1,94 @@
+{
+  "author": "Ankit Kumar Jha",
+  "name": "Play connect",
+  "short_name": "play connect",
+  "background_color": "rgb(0%, 50.19989%, 21.569824%)",
+  "theme_color": "#7ED957",
+  "orientation": "any",
+  "description": "Play React Game - SOS & Chain Reaction! Challenge friends in captivating dual player games. Create SOS or trigger chain reactions to outsmart opponents. Sign in with Google, share codes, and enjoy thrilling multiplayer battles. Visit the website for endless entertainment and track past game details.",
+  "start_url": "/play-connect/",
+  "display": "fullscreen",
+  "lang": "English",
+  "categories": ["sos", "chain reaction", "game", "react", "firebase"],
+  "screenshots": [
+    {
+      "src": "screenshot/SS_MAIN_PAGE.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "label": "Homescreen"
+    },
+    {
+      "src": "screenshot/SS_CR.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "label": "Chain reaction game"
+    },
+    {
+      "src": "screenshot/SS_SOS.png",
+      "sizes": "1920x893",
+      "type": "image/png",
+      "label": "SOS game"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Play connect",
+      "short_name": "play connect",
+      "description": "Play React Game - SOS & Chain Reaction! Challenge friends in captivating dual player games. Create SOS or trigger chain reactions to outsmart opponents. Sign in with Google, share codes, and enjoy thrilling multiplayer battles. Visit the website for endless entertainment and track past game details.",
+      "url": "https://ankitjha2603.github.io/play-connect",
+      "icons": [
+        {
+          "src": "play-connect.png",
+          "sizes": "100x100"
+        }
+      ]
+    }
+  ],
+  "icons": [
+    {
+      "src": "/play-connect/manifest-icon/play-connect-36x36.png",
+      "sizes": "36x36",
+      "type": "image/png",
+      "density": "0.75"
+    },
+    {
+      "src": "/play-connect/manifest-icon/play-connect-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "density": "1.0"
+    },
+    {
+      "src": "/play-connect/manifest-icon/play-connect-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "density": "1.5"
+    },
+    {
+      "src": "/play-connect/manifest-icon/play-connect-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "density": "2.0"
+    },
+    {
+      "src": "/play-connect/manifest-icon/play-connect-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "density": "3.0"
+    },
+    {
+      "src": "/play-connect/manifest-icon/play-connect-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "density": "4.0"
+    },
+    {
+      "src": "/play-connect/manifest-icon/play-connect-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "density": "1.4"
+    }
+  ],
+  "features": ["Cross Platform", "fast", "simple"],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

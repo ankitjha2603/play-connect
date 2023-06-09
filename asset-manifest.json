@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/play-connect/static/css/main.fd0d39c0.css",
+    "main.js": "/play-connect/static/js/main.f0380d43.js",
+    "static/media/g-4.png": "/play-connect/static/media/g-4.ed8be0409bd75d037d4f.png",
+    "static/media/g-5.png": "/play-connect/static/media/g-5.4be307800ad4591959bb.png",
+    "static/media/g-3.png": "/play-connect/static/media/g-3.d48626b905e5ad1e3524.png",
+    "static/media/r-5.png": "/play-connect/static/media/r-5.b0c00b5d90ccfa60d08e.png",
+    "static/media/r-4.png": "/play-connect/static/media/r-4.4b0f380d8d6c8d28be0a.png",
+    "static/media/g-1.png": "/play-connect/static/media/g-1.e5c70a00d57eff47fdd8.png",
+    "static/media/g-2.png": "/play-connect/static/media/g-2.224909a0fee473feb90e.png",
+    "static/media/r-3.png": "/play-connect/static/media/r-3.0aadb08fd2155ce92bba.png",
+    "static/media/r-2.png": "/play-connect/static/media/r-2.5625729e8f4268c6d1be.png",
+    "static/media/r-1.png": "/play-connect/static/media/r-1.3b1c857d8b941f2c9699.png",
+    "index.html": "/play-connect/index.html",
+    "main.fd0d39c0.css.map": "/play-connect/static/css/main.fd0d39c0.css.map",
+    "main.f0380d43.js.map": "/play-connect/static/js/main.f0380d43.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fd0d39c0.css",
+    "static/js/main.f0380d43.js"
+  ]
+}
